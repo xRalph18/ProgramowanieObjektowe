@@ -1,17 +1,10 @@
 ﻿using Lekcja15;
+using System.Globalization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 
 class Program
 {
-    public static string ReadFile(string path)
-    {
-        using (StreamReader fm = new StreamReader(path))
-        {
-            return fm.ReadToEnd();
-        }
-    }
-
     public static void Main()
     {
         Person person = new Person() { Name = "John Doe", Age = 30 };
@@ -27,10 +20,15 @@ class Program
 
         //Console.WriteLine($"{person1.Name}, {person1.Age}");
 
-        var a = ReadFile("cut_joint_reactions.txt").Split("\t");
+        var a = File.ReadAllLines("cut_joint_reactions.txt");
+
         foreach (var item in a)
         {
-            Console.WriteLine(item);
+            var b = item.Split("\t");
+            foreach (var item1 in b)
+            {
+                Console.WriteLine(item1);
+            }
         }
     }
 }
