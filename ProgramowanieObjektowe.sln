@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lekcja14 - PracaZPlikami", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lekcja14 - TCPIP_Klient", "Lekcja14 - TCPIP_Klient\Lekcja14 - TCPIP_Klient.csproj", "{1F1825E4-E9CA-4F40-805B-2C239883E12F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lekcja16 - Atrybuty", "Lekcja16 - Atrybuty\Lekcja16 - Atrybuty.csproj", "{F48075EC-D022-4E70-8249-80B2E16AE65C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lekcja16 - Atrybuty", "Lekcja16 - Atrybuty\Lekcja16 - Atrybuty.csproj", "{F48075EC-D022-4E70-8249-80B2E16AE65C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lekcja17 - Events", "Lekcja17 - Events\Lekcja17 - Events.csproj", "{60FC70D3-132F-4BB7-B13B-CEC9F6A3116C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{F48075EC-D022-4E70-8249-80B2E16AE65C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F48075EC-D022-4E70-8249-80B2E16AE65C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F48075EC-D022-4E70-8249-80B2E16AE65C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60FC70D3-132F-4BB7-B13B-CEC9F6A3116C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FC70D3-132F-4BB7-B13B-CEC9F6A3116C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FC70D3-132F-4BB7-B13B-CEC9F6A3116C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FC70D3-132F-4BB7-B13B-CEC9F6A3116C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
