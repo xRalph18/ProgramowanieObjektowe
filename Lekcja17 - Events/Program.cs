@@ -1,4 +1,6 @@
-﻿delegate void EventHandler(object sender, EventArgs e);
+﻿using Lekcja17___Events;
+
+delegate void EventHandler(object sender, EventArgs e);
 
 class OrderEventArgs : EventArgs
 {
@@ -47,5 +49,16 @@ class Program
         order.OnCreated += SMS.Send;
 
         order.Create("john@test.com", "(408)-111-2222");
+
+        Console.WriteLine();
+
+        var sub = new YoutubeService();
+
+        sub.OnMoviePublished += Movie.Publish;
+        sub.OnShortsPublished += Shorts.Publish;
+
+        sub.OnMovieUpload("https://www.youtube.com/", "Youtube", "Movie Service");
+        sub.OnShortsUpload("https://www.youtube.com/shorts", "Short Youtube", new List<string> { "short", "youtube", "history", "foryou" });
+        
     }
 }
